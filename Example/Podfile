@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZJSUtil_Example' do
+  pod 'ZJSUtil', :path => '../'
+
+  target 'ZJSUtil_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
