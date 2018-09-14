@@ -41,8 +41,8 @@
 		0B92166FCC5A1A98B8A3383B /* Pods-ZJSUtil_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSUtil_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJSUtil_Tests/Pods-ZJSUtil_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		121A62ED296BFA1E8234DAE6 /* Pods-ZJSUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSUtil_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJSUtil_Example/Pods-ZJSUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4046B192D12676462AA77340 /* Pods-ZJSUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSUtil_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJSUtil_Example/Pods-ZJSUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		57EB1E040137E696C166C534 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5C9A14C547220D3C037C24BD /* ZJSUtil.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZJSUtil.podspec; path = ../ZJSUtil.podspec; sourceTree = "<group>"; };
+		57EB1E040137E696C166C534 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5C9A14C547220D3C037C24BD /* ZJSUtil.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZJSUtil.podspec; path = ../ZJSUtil.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* ZJSUtil_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSUtil_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +65,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B6BD06624CA0543552508A2 /* Pods_ZJSUtil_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJSUtil_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2E03E2FA1B57ACC1253BBBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F2E03E2FA1B57ACC1253BBBD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FC88DE8F1BDCE42AD613582D /* Pods-ZJSUtil_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJSUtil_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJSUtil_Tests/Pods-ZJSUtil_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = allenzjs;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = VNZ55V934Y;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -485,6 +488,7 @@
 			baseConfigurationReference = 4046B192D12676462AA77340 /* Pods-ZJSUtil_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNZ55V934Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZJSUtil/ZJSUtil-Prefix.pch";
 				INFOPLIST_FILE = "ZJSUtil/ZJSUtil-Info.plist";
@@ -500,6 +504,7 @@
 			baseConfigurationReference = 121A62ED296BFA1E8234DAE6 /* Pods-ZJSUtil_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VNZ55V934Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZJSUtil/ZJSUtil-Prefix.pch";
 				INFOPLIST_FILE = "ZJSUtil/ZJSUtil-Info.plist";

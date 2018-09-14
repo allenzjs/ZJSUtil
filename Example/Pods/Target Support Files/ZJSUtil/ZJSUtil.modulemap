@@ -1,0 +1,6 @@
+framework module ZJSUtil {
+  umbrella header "ZJSUtil-umbrella.h"
+
+  export *
+  module * { export * }
+}
