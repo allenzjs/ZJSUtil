@@ -2,7 +2,7 @@
   "name": "ZJSUtil",
   "version": "0.1.0",
   "summary": "a convenient util kit for ios project.",
-  "description": "a convenient util kit for ios project.",
+  "description": "a convenient util kit for ios project, macro, category.",
   "homepage": "https://github.com/allenzjs/ZJSUtil",
   "license": {
     "type": "MIT",
