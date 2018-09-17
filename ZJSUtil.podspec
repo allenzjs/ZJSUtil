@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSUtil'
-  s.version          = '0.2.0'
+  s.version          = '0.1.0'
   s.summary          = 'a convenient util kit for ios project.'
 
 # This description is used to generate tags and improve search results.
@@ -27,8 +27,8 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-  
-  s.source_files = 'ZJSUtil/Classes/*'
+
+  s.source_files = 'ZJSUtil/Classes/**/*'
   
   s.prefix_header_contents = '#import "ZJSUtil-PrefixHeader.h"'
   
@@ -36,18 +36,7 @@ Pod::Spec.new do |s|
   #   'ZJSUtil' => ['ZJSUtil/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/*.h'
+  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  
-  s.subspec 'Util' do |ss|
-      ss.public_header_files = 'Pod/Classes/Util/**/*.h'
-      ss.source_files = 'ZJSUtil/Classes/Util/**/*'
-  end
-  
-  s.subspec 'Categories' do |ss|
-      ss.public_header_files = 'Pod/Classes/Categories/**/*.h'
-      ss.source_files = 'ZJSUtil/Classes/Categories/**/*'
-  end
-  
 end
