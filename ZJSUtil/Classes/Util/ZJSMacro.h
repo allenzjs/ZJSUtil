@@ -97,7 +97,7 @@ tmp;\
 //字体
 #define kZJS_Font(_Size_) [UIFont systemFontOfSize:_Size_]
 #define kZJS_BoldFont(_Size_) [UIFont boldSystemFontOfSize:_Size_]
-#define kZJS_WeightFont(_Size_,_Weight_) [UIFont systemFontOfSize:_Size_ weight:_Weight]
+#define kZJS_WeightFont(_Size_,_Weight_) [UIFont systemFontOfSize:_Size_ weight:_Weight_]
 #define kZJS_SpecFont(_Name_,_Size_) [UIFont fontWithName:_Name_ size:_Size_]
 
 //图片
