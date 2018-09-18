@@ -14,6 +14,7 @@
 #import "UIColor+ZJSUtil.h"
 #import "UIImage+ZJSUtil.h"
 #import "UIButton+ZJSUtil.h"
+#import "CALayer+ZJSUtil.h"
 #import "UIViewController+ZJSUtil.h"
 
 #endif /* ZJSUtil_h */
