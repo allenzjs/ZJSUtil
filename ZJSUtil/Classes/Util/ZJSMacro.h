@@ -71,7 +71,8 @@
 ({\
 UIEdgeInsets tmp;\
 if (@available(iOS 11.0, *)) {\
-tmp = [UIApplication sharedApplication].delegate.window.safeAreaInsets; }\
+UIEdgeInsets temp = [UIApplication sharedApplication].delegate.window.safeAreaInsets;\
+tmp = temp.bottom ? temp : UIEdgeInsetsZero; }\
 else {\
 tmp = UIEdgeInsetsZero; }\
 tmp;\

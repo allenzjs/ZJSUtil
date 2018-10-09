@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJSUtil'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'a convenient util kit for ios project.'
 
 # This description is used to generate tags and improve search results.
