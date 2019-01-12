@@ -23,6 +23,8 @@ typedef NS_ENUM(NSUInteger, ZJSGradientDirection) {
 - (UIImage *)zjs_imageWithTargetWidth:(CGFloat)targetWidth scale:(CGFloat)scale;
 // 根据当前设备生成标准的(@1x,@2x,@3x)图
 - (UIImage *)zjs_imageWithTargetWidth:(CGFloat)targetWidth;
+// 裁剪任意矩形区域的图片
+- (UIImage *)zjs_cropInRect:(CGRect)rect;
 // 裁剪中心点周围最大的正方形区域的图片
 - (UIImage *)zjs_cropCenterMaxSquareArea;
 // 用颜色创建一张纯色图片
