@@ -321,7 +321,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZJSUtil_Example/Pods-ZJSUtil_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ZJSUtil_Example/Pods-ZJSUtil_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ZJSUtil/ZJSUtil.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -330,7 +330,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZJSUtil_Example/Pods-ZJSUtil_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZJSUtil_Example/Pods-ZJSUtil_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E6997A42FCF48B804B861F59 /* [CP] Check Pods Manifest.lock */ = {

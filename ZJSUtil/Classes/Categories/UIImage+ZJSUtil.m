@@ -54,6 +54,7 @@
 {
     CGImageRef newImageRef = CGImageCreateWithImageInRect(self.CGImage, CGRectMake(rect.origin.x*self.scale, rect.origin.y*self.scale, rect.size.width*self.scale, rect.size.height*self.scale));
     UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:self.scale orientation:self.imageOrientation];
+    CGImageRelease(newImageRef);
     return newImage;
 }
 
