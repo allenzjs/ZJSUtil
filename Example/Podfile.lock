@@ -1,5 +1,5 @@
 PODS:
-  - ZJSUtil (0.5.1)
+  - ZJSUtil (0.5.2)
 
 DEPENDENCIES:
   - ZJSUtil (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZJSUtil: c31f0260d1c10f9e045309316231c267b315da10
+  ZJSUtil: a16dbc0bb83d9e037365feabfe719bf85663e219
 
 PODFILE CHECKSUM: 25e43a30ef3ace2fb22a1509a3c43b5edcfabd7d
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.7.4

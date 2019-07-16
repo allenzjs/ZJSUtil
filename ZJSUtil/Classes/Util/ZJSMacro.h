@@ -170,7 +170,21 @@ value;\
 #endif
 #endif
 
-//自定义Log方便调试
-#define kZJS_Log(...) fprintf(stderr, "%s 第%d行\n%s\n\n", __func__, __LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
+/**
+ *  自定义Log（提供两种模式，默认只在DEBUG下输出日志）
+ */
+#define kZJS_LogMode_Always 0
+#define kZJS_LogMode_Debug 1
+#define kZJS_LogMode kZJS_LogMode_Debug
+#define _kZJS_Log(...) fprintf(stderr, "%s 第%d行\n%s\n\n", __func__, __LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
+#if kZJS_LogMode
+#ifdef DEBUG  //调试阶段
+#define kZJS_Log(...) _kZJS_Log(__VA_ARGS__)
+#else  //发布阶段
+#define kZJS_Log(...)
+#endif
+#else
+#define kZJS_Log(...) _kZJS_Log(__VA_ARGS__)
+#endif
 
 #endif /* ZJSMacro_h */
