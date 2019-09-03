@@ -45,10 +45,10 @@
 + (CGFloat)zjs_heightForLabelWithAttributedText:(NSAttributedString *)attributedText textAlignment:(NSTextAlignment)textAlignment font:(UIFont *)font numberOfLines:(NSInteger)numberOflines maxWidth:(CGFloat)maxWidth;
 // 获取一个指定行高的字符串
 + (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text lineSpacing:(CGFloat)lineSpacing;
-// 获取一个指定行高，字体大小，字体颜色，对齐方式的字符串
-+ (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text lineSpacing:(CGFloat)lineSpacing fontSize:(CGFloat)fontSize textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment;
 // 获取一个指定字体，字体颜色的字符串
 + (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor;
+// 获取一个指定行高，字体，字体颜色，对齐方式的字符串
++ (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text lineSpacing:(CGFloat)lineSpacing font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment;
 // 获取一个带中划线的字符串
 + (NSAttributedString *)zjs_attributedStrikethroughTextWithText:(NSString *)text lineColor:(UIColor *)lineColor;
 // 获取一个带下划线的字符串

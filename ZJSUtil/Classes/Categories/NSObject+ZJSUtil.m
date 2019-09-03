@@ -192,17 +192,12 @@
     return attributedText;
 }
 
-#pragma mark 获取一个指定行高，字体大小，字体颜色，对齐方式的字符串
-+ (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text lineSpacing:(CGFloat)lineSpacing fontSize:(CGFloat)fontSize textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment
+#pragma mark 获取一个指定字体，字体颜色的字符串
++ (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor
 {
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.lineSpacing = lineSpacing;
-    paragraphStyle.alignment = textAlignment;
-    paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
-    [attributes setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
-    if (fontSize > 0) {
-        [attributes setObject:kZJS_Font(fontSize) forKey:NSFontAttributeName];
+    if (font) {
+        [attributes setObject:font forKey:NSFontAttributeName];
     }
     if (textColor) {
         [attributes setObject:textColor forKey:NSForegroundColorAttributeName];
@@ -211,10 +206,15 @@
     return attributedText;
 }
 
-#pragma mark 获取一个指定字体，字体颜色的字符串
-+ (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor
+#pragma mark 获取一个指定行高，字体，字体颜色，对齐方式的字符串
++ (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text lineSpacing:(CGFloat)lineSpacing font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment
 {
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineSpacing = lineSpacing;
+    paragraphStyle.alignment = textAlignment;
+    paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+    [attributes setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
     if (font) {
         [attributes setObject:font forKey:NSFontAttributeName];
     }
