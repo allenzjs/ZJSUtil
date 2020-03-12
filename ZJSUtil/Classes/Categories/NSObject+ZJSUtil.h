@@ -63,8 +63,6 @@
 + (NSString *)zjs_arc4randomStringWithCount:(NSUInteger)count;
 // 将indexPath转化成字符串key
 + (NSString *)zjs_indexPathStringKey:(NSIndexPath *)indexPath;
-// 拨打电话
-+ (UIWebView *)zjs_callSomeoneWithPhoneNumber:(NSString *)phoneNumber;
 // 获取App版本号
 + (NSString *)zjs_getAppVersion;
 // 获取App版本号和build号

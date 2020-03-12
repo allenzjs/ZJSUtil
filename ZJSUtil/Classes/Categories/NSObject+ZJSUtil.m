@@ -323,16 +323,6 @@
     return kZJS_NoneString;
 }
 
-#pragma mark 拨打电话
-+ (UIWebView *)zjs_callSomeoneWithPhoneNumber:(NSString *)phoneNumber
-{
-    NSString *urlString = [NSString stringWithFormat:@"%@%@", @"tel:", phoneNumber];
-    NSURL *url = [NSURL URLWithString:urlString];
-    UIWebView *callWebView = [UIWebView new];
-    [callWebView loadRequest:[NSURLRequest requestWithURL:url]];
-    return callWebView;
-}
-
 #pragma mark 获取App版本号
 + (NSString *)zjs_getAppVersion
 {
