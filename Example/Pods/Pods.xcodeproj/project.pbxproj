@@ -513,36 +513,6 @@
 			};
 			name = Debug;
 		};
-		206DF08B729976B2E3799994A258BF22 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 184F383CFBC3C571FD2F5604AC834EDA /* ZJSUtil.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZJSUtil/ZJSUtil-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZJSUtil/ZJSUtil-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZJSUtil/ZJSUtil.modulemap";
-				PRODUCT_MODULE_NAME = ZJSUtil;
-				PRODUCT_NAME = ZJSUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		3C0627044AAF80007EE85CD3FD9674E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7D4F8E858FC651E9C275A61BE622951 /* Pods-ZJSUtil_Tests.debug.xcconfig */;
@@ -700,6 +670,37 @@
 			};
 			name = Debug;
 		};
+		9907E09F5DD83B4741C2A8A42114888B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F994264800BFF5836413DAA49E96AA59 /* ZJSUtil.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZJSUtil/ZJSUtil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZJSUtil/ZJSUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZJSUtil/ZJSUtil.modulemap";
+				PRODUCT_MODULE_NAME = ZJSUtil;
+				PRODUCT_NAME = ZJSUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B6B40A3C8B2ADC7BF135BCD484C19370 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C71473FCC3EB8A10E1CE952EB83E94FB /* Pods-ZJSUtil_Tests.release.xcconfig */;
@@ -768,9 +769,9 @@
 			};
 			name = Release;
 		};
-		DAEC20D870E7D56035791BD68943659A /* Release */ = {
+		FF937B68358B16CF53302E564F2F025A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F994264800BFF5836413DAA49E96AA59 /* ZJSUtil.release.xcconfig */;
+			baseConfigurationReference = 184F383CFBC3C571FD2F5604AC834EDA /* ZJSUtil.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -784,7 +785,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ZJSUtil/ZJSUtil-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ZJSUtil/ZJSUtil-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ZJSUtil/ZJSUtil.modulemap";
 				PRODUCT_MODULE_NAME = ZJSUtil;
@@ -793,11 +794,10 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -832,8 +832,8 @@
 		F5165E67073F86FB34A0E6C8AFB0328E /* Build configuration list for PBXNativeTarget "ZJSUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				206DF08B729976B2E3799994A258BF22 /* Debug */,
-				DAEC20D870E7D56035791BD68943659A /* Release */,
+				FF937B68358B16CF53302E564F2F025A /* Debug */,
+				9907E09F5DD83B4741C2A8A42114888B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
