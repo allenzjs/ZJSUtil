@@ -91,8 +91,6 @@
     
     UIImage *targetImage = UIGraphicsGetImageFromCurrentImageContext();
     
-    CGContextRelease(context);
-    
     UIGraphicsEndImageContext();
     
     return targetImage;
@@ -141,7 +139,6 @@
     CGContextRestoreGState(context);
     CGGradientRelease(gradient);
     CGColorSpaceRelease(colorSpace);
-    CGContextRelease(context);
     
     UIGraphicsEndImageContext();
     
@@ -168,8 +165,6 @@
     CGContextFillRect(context, CGRectMake(0, 0, size.width, size.height));
     
     UIImage *targetImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    CGContextRelease(context);
     
     UIGraphicsEndImageContext();
     
@@ -218,7 +213,6 @@
     CGContextRestoreGState(context);
     CGGradientRelease(gradient);
     CGColorSpaceRelease(colorSpace);
-    CGContextRelease(context);
     
     UIGraphicsEndImageContext();
     
