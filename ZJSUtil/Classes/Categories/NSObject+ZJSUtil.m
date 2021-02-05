@@ -182,12 +182,17 @@
     return lab.bounds.size.height;
 }
 
-#pragma mark 获取一个指定行高的字符串
+#pragma mark 获取一个指定行间距的字符串
 + (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text lineSpacing:(CGFloat)lineSpacing
+{
+    return [self zjs_attributedTextWithText:text lineSpacing:lineSpacing lineBreakMode:NSLineBreakByTruncatingTail];
+}
+
++ (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text lineSpacing:(CGFloat)lineSpacing lineBreakMode:(NSLineBreakMode)lineBreakMode
 {
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineSpacing = lineSpacing;
-    paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
+    paragraphStyle.lineBreakMode = lineBreakMode;
     NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:text attributes:@{NSParagraphStyleAttributeName:paragraphStyle}];
     return attributedText;
 }
@@ -206,13 +211,18 @@
     return attributedText;
 }
 
-#pragma mark 获取一个指定行高，字体，字体颜色，对齐方式的字符串
+#pragma mark 获取一个指定行间距，字体，字体颜色，对齐方式的字符串
 + (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text lineSpacing:(CGFloat)lineSpacing font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment
+{
+    return [self zjs_attributedTextWithText:text lineSpacing:lineSpacing lineBreakMode:NSLineBreakByTruncatingTail font:font textColor:textColor textAlignment:textAlignment];
+}
+
++ (NSAttributedString *)zjs_attributedTextWithText:(NSString *)text lineSpacing:(CGFloat)lineSpacing lineBreakMode:(NSLineBreakMode)lineBreakMode font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment
 {
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineSpacing = lineSpacing;
     paragraphStyle.alignment = textAlignment;
-    paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
+    paragraphStyle.lineBreakMode = lineBreakMode;
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
     [attributes setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
     if (font) {
